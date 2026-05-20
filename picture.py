@@ -40,7 +40,15 @@ def draw_picture(width, height):
     # code for GREEN triangles
  
  
-    # code for MAGENTA triangles
+    # code for MAGENTA triangles (Cherry) 
+    sg.set_fill_color(colors[4]) # set fill color to magenta
+
+    for i in range(5):
+        sg.fill_triangle(
+            0*TRIANGLE_WIDTH, i*TRIANGLE_HEIGHT,
+            1 * TRIANGLE_WIDTH, i * TRIANGLE_HEIGHT,
+            1*TRIANGLE_WIDTH, (i + 1) * TRIANGLE_HEIGHT
+        )
     
     
     # code for CYAN triangles
